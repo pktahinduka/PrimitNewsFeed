@@ -11,12 +11,9 @@ jsonobj = json.load(urllib.request.urlopen(api_url))
 # index into the array and access a sub-attribute like this:
 print(jsonobj[5])
 
-values = {'sender': 'Peter', 'receiver': 'Team 2', 'message': 'WE CRACK THIS EVERYDAY'}
+data = {'sender': 'Peter', 'receiver': 'Team 2', 'message': 'WE CRACK THIS EVERYDAY'}
 headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
-r = requests.post(api_url, data=json.dumps(values), headers=headers)
+r = requests.post(api_url, data=json.dumps(data), headers=headers)
 
-data = urllib.parse.urlencode(values)
-data = data.encode('ascii')
-req = urllib.request.Request(api_url, data, headers)
-with urllib.request.urlopen(req) as response:
+with urllib.request.urlopen(api_url) as response:
    the_page = response.read()
