@@ -1,0 +1,7 @@
+Collecting freeze
+  Downloading freeze-1.0.10.tar.gz
+Requirement already satisfied: six in c:\users\baron\appdata\local\programs\python\python36-32\lib\site-packages (from freeze)
+Installing collected packages: freeze
+  Running setup.py install for freeze: started
+    Running setup.py install for freeze: finished with status 'done'
+Successfully installed freeze-1.0.10
