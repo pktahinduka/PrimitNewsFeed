@@ -47,7 +47,7 @@ def docopt_cmd(func):
 
 class PrimitiveNewsFeed(cmd.Cmd):
     os.system("cls")
-    prompt = "PrimitFeed>>> "
+    prompt = "primfeed "
 
 
     def __init__(self):
